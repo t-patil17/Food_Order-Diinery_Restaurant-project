@@ -1,0 +1,204 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4">
+            <h1>FRESH AND DELICIOUS</h1>
+            <P>Taste it now with our online order!</P>
+
+            <div class="icons">
+           <i class="fa fa-star" aria-hidden="true"></i>
+           <i class="fa fa-star" aria-hidden="true"></i>
+           <i class="fa fa-star" aria-hidden="true"></i>
+           <i class="fa fa-star" aria-hidden="true"></i>
+           <i class="fa fa-star-half-o" aria-hidden="true"></i>
+        </div>
+
+
+        <div class="menu-btn">
+        <button type="button" class="btn view">VIEW MORE ></button>
+       </div>
+
+        </div>
+        <div class="col-lg-8">
+            <img src="assets/chef-serving with-mashed.avif" alt="" width="100%">
+        </div>
+    </div> <br>
+
+    <div class="container-fluid">
+    <h2 class="midd"><img src="assets/dinery_logo (1).png" alt=""></h2>
+
+    <!--Two buttons modal button 1  -->
+
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <button type="button" class="btn btnfood" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">ADD FOOD</button>
+         
+            
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">FOOD MANAGEMENT:</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">FOOD NAME:</label>
+                        <input type="text" class="form-control" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" id="recipient-name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="price" class="col-form-label">PRICE:</label>
+                        <input type="tel" class="form-control" [(ngModel)]="price" [ngModelOptions]="{standalone: true}" >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">select Quantity</label>
+                        <select class="form-control" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" id="exampleFormControlSelect1">
+                          <option value=""></option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                        </select>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="price" class="col-form-label">IMAGE:</label>
+                        <input type="file" (change)="selectfile($event)" class="form-control">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" (click)="clear()" data-bs-dismiss="modal">Close</button>
+                    <button type="button" [disabled]="name == '' || price=='' " class="btn btn-primary" (click)="additems()" >Adding</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                
+
+            <!-- second button 2 modal  -->
+            <button type="button" class="btn btndest" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@mdo">ADD DESSERTS</button>
+         
+            <!-- modal box -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">DESSERTS MANAGEMENT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"  aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="mb-3">
+                        <label for="recipient-name" class="col-form-label">DESSERTS NAME:</label>
+                        <input type="text" [(ngModel)]="name" [ngModelOptions]="{standalone: true}" class="form-control" id="recipient-name">
+                      </div>
+                      
+                      <div class="mb-3">
+                        <label for="price" class="col-form-label">PRICE:</label>
+                        <input type="tel" class="form-control" [(ngModel)]="price" [ngModelOptions]="{standalone: true}" >
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleFormControlSelect1">select Quantity</label>
+                        <select class="form-control" [(ngModel)]="quantity" [ngModelOptions]="{standalone: true}" id="exampleFormControlSelect1">
+                          <option value=""></option>
+                          <option>01</option>
+                          <option>02</option>
+                          <option>03</option>
+                          <option>04</option>
+                          <option>05</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="price" class="col-form-label">IMAGE:</label>
+                        <input type="file" (change)="selectfile($event)" class="form-control">
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" (click)="clear()" data-bs-dismiss="modal">Close</button>
+                    <button type="button"  [disabled]="name == '' || price=='' " class="btn btn-primary" (click)="addish()">Adding</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        </div>
+        <div class="col-lg-4"></div>
+
+    </div>
+  </div>
+
+  <!-- data show code card static  -->
+    <div class="row">
+        <div class="col-lg-6 food">
+            <div class="card" style="width: 24rem;">
+                <img src="assets/order food.avif" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h2 class="card-title">Food Order </h2>
+                  <p class="card-text">spicy, basmati, steamed, fried, wild, brown, sticky, fluffy, puffed, Japanese, golden, Chinese, Indian, Oriental, soft, grained, short, medium, long-grain rice, Italian, Mediterranean.</p>
+                  <a  class="btn btn-food" routerLink="/menu/food"> VIEW FOOD </a>
+                </div>
+              </div>
+        </div>
+
+        <!-- dessert static  -->
+
+        <div class="col-lg-6 dessrt">
+            <div class="card" style="width: 24rem;">
+                <img src="assets/king dessert.webp" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h2 class="card-title">Desserts Order</h2>
+                  <p class="card-text">Dessert: crunchy, sweet, moist (moist chocolate cake), spiced sticky (sticky blueberry muffins), nutty, silky, naked (cake), bittersweet (chocolate chips), chocolate (icing), salted caramel (brownies)</p>
+                  <a  class="btn btn-dest" routerLink="/menu/desserts"> VIEW DESSERT </a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <!-- dynamic data card  -->
+
+      
+      <div class="row dynamic">
+
+        <div class="col-lg-6 " *ngFor="let data of foodie let i=index">
+            <div class="card" style="width: 20rem;">
+                <img [src]="data.image" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                  <h1>{{data.name}}</h1>
+                  <h2 class="card-title">RS. {{data.price}} </h2>
+                  <h4>Quantity : {{data.quantity}}</h4>
+
+                  <p class="card-text">fried, wild, Chinese, Indian, Oriental, soft, grained, short,  Italian, Mediterranean.</p>
+                  <a  class="btn btn-food" (click)="delete(i)" > Delete </a>
+                </div>
+              </div>
+        </div>
+
+        <!-- dessert dynamic  -->
+
+        <div class="col-lg-6 " *ngFor="let data of sweetdish let i=index">
+            <div class="card" style="width: 20rem;">
+                <img [src]="data.image" class="card-img-top" alt="...">
+                
+                <div class="card-body">
+                  <h1>{{data.name}}</h1>
+                  <h2 class="card-title">RS. {{data.price}}</h2>
+                  <h4>Quantity : {{data.quantity}}</h4>
+                  <p class="card-text">crunchy, sweet, moist nutty, silky, naked (cake), chocolate (icing), (brownies)</p>
+                  <a  class="btn btn-dest" (click)="remove(i)" > Delete </a>
+                </div>
+              </div>
+        </div>
+      </div>
+
+</div>
+
+
+<app-footer></app-footer>

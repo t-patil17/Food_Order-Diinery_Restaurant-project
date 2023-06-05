@@ -1,0 +1,80 @@
+
+
+.bg {
+    background-color: rgb(207, 205, 205);
+    margin:30px;
+    height: 160px;
+    text-align: center;
+}
+
+.bg p {
+    font-size: 25px;
+}
+
+.list {
+    background-color: black;
+    height: 220px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 100px;
+    padding-top: 30px;
+    margin-bottom: 25em;
+
+    
+}
+
+
+.list li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 20px;
+  
+}
+
+.burger img {
+    height: 250px;
+}
+
+.pizza img{
+    width: 61em; 
+    height: 250px;
+
+}
+
+.piz-mr {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #ddae71;
+    text-align: center;
+}
+
+.photo img{
+    width: 100px;
+}
+
+.pizzimg img {
+    width: 100px;
+
+}
+
+h5 {
+    color: #e3a85b;
+}
+
+h6{
+   color:#ffc107;
+}
+
+table{
+    margin-bottom: 150px;
+}
+
+td {
+    font-weight: bold;
+}
+
+td img {
+    height: 80px ;
+}

@@ -1,0 +1,54 @@
+
+<app-header></app-header>
+
+<div class="container-fluid">
+    <!-- <div class="row bg"> -->
+      <!-- <h1>Desserts List</h1>
+      <p>Some informations about our restaurant</p> -->
+  
+    <!-- </div> -->
+
+    <img src="assets/desserts banner.jpg" alt="" width="100%">
+ </div>
+
+ <div class="container">
+
+  <div class="srch" >
+  <input type="search" [(ngModel)]="searching.name" [ngModelOptions]="{standalone:true}" placeholder="Search">
+  </div>
+    <div class="row card-cent mt-5">
+        <div class="col-lg-4" *ngFor="let data of sweetitem |filterBy: searching ;let i=index">
+            <div class="card" style="width: 22rem;">
+                <img [src]="data.image" class="card-img-top" alt="..." height="100%">
+                <div class="card-body">
+                  <h4 class="card-title">{{data.name}}</h4>
+              
+                  <h5 class="card-text">{{data.price}}</h5>
+                  <a class="btn btn-primary" (click)="add(i)">ADD ITEM </a>
+                </div>
+              </div>
+        </div>
+    </div>
+ </div>
+
+
+ <!-- table data push  -->
+
+ <div class="container">
+    <div class="card mb-5 data" >
+        <div class="row g-0" *ngFor="let data of dessert ; let i=index">
+          <div class="col-md-4">
+            <img [src]="data.image" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1 >{{data.name}}</h1>
+              <p >{{data.price}}</p>
+              <!-- <p class="card-text"><small class="text-muted"></small></p> -->
+            </div>
+            <button type="button" class="btn re-bt" (click)="delete(i)"> REMOVE </button>
+          </div>
+        </div>
+      </div>
+
+ </div>

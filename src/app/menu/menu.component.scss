@@ -1,0 +1,117 @@
+h1 {
+  font-weight: 200;
+  max-width: 400px;
+  font-size: 60px;
+  margin: 40px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+p {
+  margin: 30px;
+  font-size: 25px;
+  color: #ddae71;
+
+}
+
+.icons {
+  margin-left: 30px;
+}
+
+i {
+  color: #ddae71;
+  padding: 6px;
+
+}
+
+ .menu-btn .view {
+    border:2px solid #ddae71;
+    float: right;
+    margin-top: 50px;
+}
+
+.menu-btn .view:hover{
+    background-color: #ddae71;
+    color: aliceblue;
+}
+
+.card {
+  box-shadow:gray 0px 5px 15px;
+}
+
+.food .card{
+  margin-left: 20em;
+  margin-top: 5em;
+}
+
+.dessrt .card {
+  // margin-left: 20em;
+  margin-top: 5em;
+}
+
+.card .btn-food {
+  border: 2px solid darkorange;
+  background-color:rgb(212, 112, 40);
+  color: aliceblue;
+  margin-left: 120px;
+}
+
+.card .btn-dest {
+  border: 2px solid darkorange;
+  background-color: rgb(212, 112, 40);
+  color: aliceblue;
+  margin-left: 120px;
+
+
+}
+
+.card p {
+  font-size: 18px;
+  text-align: center;
+}
+
+.card h2 {
+  text-align: center;
+  color: chocolate;
+  text-decoration: underline;
+}
+
+.midd {
+  display: flex;
+  flex-direction: row;
+}
+
+.midd:before,
+.midd:after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 4px solid #000;
+  margin: auto;
+}
+
+ h2 img {
+  height: 100px;
+  width: 120px;
+  // border-radius: 100%;
+}
+
+.btnfood {
+  background-color: #ddae71;
+  // color:chocolate;
+  font-weight: bold;
+  margin-left: 90px;
+}
+
+.btndest{
+  background-color: #ddae71;
+  // color:chocolate;
+  font-weight: bold;
+  margin-left: 50px;
+}
+
+.dynamic {
+  justify-content: center;
+  display: flex;
+  margin-left: 350px;
+  margin-top: 50px;
+
+}

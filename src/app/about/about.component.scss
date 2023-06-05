@@ -1,0 +1,103 @@
+
+.head h1{
+   text-align: center;
+   font-size: 80px;
+}
+.head h4 {
+    text-align: center;
+
+}
+
+
+.content {
+margin-top: 70px;
+
+}
+
+.cont {
+ margin-left: 10em ;
+
+}
+.content h1 {
+   margin-top: 3em;
+    max-width: 450px;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.content small{
+   margin-top: 3em;
+   font-size: 18px;
+
+}
+
+.cont p {
+    margin-top: 50px;
+}
+.cont h4 {
+    margin-top: 5em;
+    font-weight: 300;
+}
+
+.cont .btn{
+    border: 2px solid #ddae71;
+    margin-top: 30px;
+}
+.cont .btn:hover{
+    background-color: #ddae71;
+    color: aliceblue;
+}
+
+// // hero image css 
+// .heroes-image {
+//     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/food\ about.jpg");
+//     height: 500px;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     position: relative;
+//   }
+  
+//   .img-text {
+//     text-align: center;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+//     color: white;
+//   }
+  
+// //   first button 
+//    .heroes-image .btn-order {
+//     border: 3px solid #ddae71;
+//     // outline: 0;
+//     display: inline-block;
+//     padding: 10px 25px;
+//     color:aliceblue;
+//     font-weight: bold;
+//     background-color:#ddae71;
+//     text-align: center;
+//     cursor: pointer;
+//     margin-right: 10px;
+//   }
+  
+  
+
+// //   second image 
+//   .img-text .btn-table  {
+    
+//     display: inline-block;
+//     padding: 10px 25px;
+//     border: 3px solid #ddae71;
+//     background-color: black;
+//     opacity: 0.6;
+//     color: aliceblue;
+//     text-align: center;
+//     cursor: pointer;
+//     font-weight: 700;
+//   }
+  
+//   .img-text .btn-table:hover {
+//     background-color: #ddae71;
+//     color: white;
+//   }

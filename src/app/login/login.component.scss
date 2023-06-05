@@ -1,0 +1,45 @@
+
+
+ form {
+text-align: center;
+// margin-top: 10em;
+ border: 1px solid black;
+ padding: 50px;
+ width: 25em;
+ margin: 70px auto;
+ color: aliceblue;
+ background-color: black;
+    opacity: 0.6;
+
+}
+
+.bg {
+    background-image: url("../../assets/pexels-photo.jpeg");
+    height: 650px;
+    margin-top: 50px;
+    width: 100%;
+    background-size: cover;
+
+    // opacity: 0.9;
+
+}
+
+input{
+    width: 15em;
+    line-height: 40px;
+    
+}
+
+::placeholder {
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+.logbtn {
+    padding: 10px 50px ;
+    font-size: 17px;
+    font-weight: 500;
+    background-color:cornflowerblue;
+    color: aliceblue;
+}

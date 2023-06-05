@@ -1,0 +1,50 @@
+
+
+.bg-img {
+    background-image: url("../../assets/prop+styling+food\ gif.gif");
+    height: 850px;
+    margin: 70px;
+    background-size: cover;
+   
+}
+
+form{
+    border: 2px solid white;
+    margin: 3em auto;
+    width: 600px;
+    background-color: aliceblue;
+    padding: 5px 30px;
+   
+}
+.section label{
+    margin-left: 2em;
+    font-weight: bold;
+
+}
+
+.section input{
+    width: 30em;
+    margin-left: 2em;
+    
+}
+
+.date input{
+    width: 15em;
+    margin-left: 5px auto;
+
+}
+.attend input{
+    width: 15em;
+    margin: 0;
+
+}
+
+.section .btn{
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+    padding: 17px 190px;
+    margin-top: 10px;
+    font-size: 19px;
+    
+
+}
