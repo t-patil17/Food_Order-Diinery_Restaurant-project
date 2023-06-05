@@ -11,24 +11,24 @@ export class FoodComponent implements OnInit {
 
   Adddata : any=[
     {
-      name:"Cheese burger" , image:"../../../assets/peppy burger.webp",  quantity:2 , price: "125Rs/-"
+      name:"Cheese burger" , image:"assets/peppy burger.webp",  quantity:2 , price: "125Rs/-"
     },
-    {name:"Veggie burger" , image:"../../../assets/bera burger.webp", quantity:4, price:"150Rs/-"},
+    {name:"Veggie burger" , image:"assets/bera burger.webp", quantity:4, price:"150Rs/-"},
 
-    {name:"Crispy Veg Burger" , image:"../../../assets/DSC burger.jpg", quantity:4, price:"90Rs/-"},
+    {name:"Crispy Veg Burger" , image:"assets/DSC burger.jpg", quantity:4, price:"90Rs/-"},
 
-    {name:"Butter Chicken Twin Burgers.", image:"../../../assets/im burger.jpg" , quantity:4, price:"120Rs/-"},
+    {name:"Butter Chicken Twin Burgers.", image:"assets/im burger.jpg" , quantity:4, price:"120Rs/-"},
     
   ];
 
   pizzadata: any=[
-    {name:"Peppy Paneer Pizza.", image:"../../../assets/mixed-pizza.avif" , quantity: 3, price:"190Rs/-"},
+    {name:"Peppy Paneer Pizza.", image:"assets/mixed-pizza.avif" , quantity: 3, price:"190Rs/-"},
 
-    {name:"BBQ Chicken Pizza.", image: "../../../assets/chiken piz.webp", quantity: 1, price:"250Rs/-"},
+    {name:"BBQ Chicken Pizza.", image: "assets/chiken piz.webp", quantity: 1, price:"250Rs/-"},
 
-    {name:"Mexican Green Wave Pizza.", image:"../../../assets/Pizza-Crust.webp", quantity: 2, price:"300Rs/-"},
+    {name:"Mexican Green Wave Pizza.", image:"assets/Pizza-Crust.webp", quantity: 2, price:"300Rs/-"},
 
-    {name:"Spring Pizza.", quantity: 4, image:"../../../assets/piz.jpg", price:"220Rs/-"},
+    {name:"Spring Pizza.", quantity: 4, image:"assets/piz.jpg", price:"220Rs/-"},
 
 
   ]

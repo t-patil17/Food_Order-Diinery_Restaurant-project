@@ -13,38 +13,38 @@ export class DessertsComponent {
   sweetitem: any = [
     {
       name: 'Brownies.',
-      image: '../../../assets/brownie.jpg',
+      image: 'assets/brownie.jpg',
       quantity: 2,
       price: 'RS-200/-  ',
     },
     {
       name: 'Fruit salad.',
-      image: '../../../assets/(Fruit_salad).jpg',
+      image: 'assets/(Fruit_salad).jpg',
       quantity: 3,
       price: 'RS-250/- ',
     },
     {
       name: 'Milkshakes.',
-      image: '../../../assets/milk-shakes.avif',
+      image: 'assets/milk-shakes.avif',
       quantity: 3,
       price: 'RS-160/-',
     },
     {
       name: 'Ice cream.',
-      image: '../../../assets/ice-creame.webp',
+      image: 'assets/ice-creame.webp',
       quantity: 2,
       price: 'RS-100/-',
     },
 
     {
       name: 'Turkish Delight.',
-      image: '../../../assets/turkish delight.jpg',
+      image: 'assets/turkish delight.jpg',
       quantity: 1,
       price: 'RS-180/-',
     },
     {
       name: 'Nut Cake.',
-      image: '../../../assets/nut cake.jpg',
+      image: 'assets/nut cake.jpg',
       quantity: 4,
       price: 'RS-120/-',
     },
